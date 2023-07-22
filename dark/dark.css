@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1220px;
+    height: 100vh;
+    background: var(--background-bg-secondary, #161622);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 303px;
+}
+
+.conteiner .left {
+    max-width: 590px;
+}
+
+.conteiner .left p {
+    color: var(--text-txt-secondary, rgba(255, 255, 255, 0.75));
+    font: 400 24px Inter;
+}
+
+.conteiner .left h1 {
+    color: var(--text-txt-primary, rgba(255, 255, 255, 0.90));
+    font: 700 48px Inter;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.conteiner .left .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteiner .left .buttons div {
+    padding: 15px 0px;
+    border-radius: 8px;
+    background: var(--brand-primary, #6F1DF4);
+    width: 145px;
+    color: var(--pallete-white, #FFF);
+    text-align: center;
+    font: 700 16px Inter;
+}
+
+.conteiner .right {
+    background-image: url(./assets/404\ light.png);
+    width: 510px;
+    height: 195px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+}
+
+@media (max-width:768px) {
+    body {
+        max-width: 408px;
+    }
+
+    .conteiner {
+        flex-direction: column-reverse;
+        max-width: 408px;
+        height: 400px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner .right {
+        width: 350px;
+        height: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner .left p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .conteiner .left h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .conteiner .left .buttons {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .conteiner .left .buttons .btn1 {
+        margin-right: 12px;
+    }
+
+}
+
+@media (max-width:375px) {
+    body {
+        max-width: 343px;
+    }
+
+    .conteiner {
+        max-width: 343px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .conteiner .right {
+        width: 230px;
+        height: 90px;
+    }
+
+    .conteiner .left p {
+        font-size: 18px;
+    }
+
+    .conteiner .left h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .conteiner .left .buttons {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .conteiner .left .buttons .btn1,
+    .conteiner .left .buttons .btn2 {
+        width: 100%;
+    }
+
+    .conteiner .left .buttons .btn1 {
+        margin-bottom: 20px;
+    }
+
+}
