@@ -58,6 +58,11 @@ body {
     margin-right: 24px;
 }
 
+.conteiner .left .buttons .btn1:active,
+.conteiner .left .buttons .btn2:active {
+    background: #8a9dfc;
+}
+
 .conteiner .right {
     background-image: url(./assets/404.png);
     width: 510px;
@@ -145,10 +150,12 @@ body {
         flex-direction: column;
         width: 90%;
     }
+
     .conteiner .left .buttons .btn1,
     .conteiner .left .buttons .btn2 {
         width: 100%;
     }
+
     .conteiner .left .buttons div:not(:last-child) {
         margin-bottom: 20px;
     }

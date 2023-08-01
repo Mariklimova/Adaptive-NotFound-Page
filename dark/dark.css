@@ -53,6 +53,11 @@ body {
     font: 700 16px Inter;
 }
 
+.conteiner .left .buttons .btn1:active,
+.conteiner .left .buttons .btn2:active {
+    background: #8a9dfc;
+}
+
 .conteiner .right {
     background-image: url(./assets/404\ light.png);
     width: 510px;
