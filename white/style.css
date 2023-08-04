@@ -64,13 +64,12 @@ body {
 }
 
 .conteiner .right {
-    background-image: url(./assets/404.png);
+    background-image: url(../assets/404.png);
     width: 510px;
     height: 195px;
     background-repeat: no-repeat;
     background-size: contain;
     max-width: 100%;
-
 }
 
 @media (max-width: 768px) {
